@@ -11,20 +11,20 @@ import {
 const Menu = () => {
   return <ul>
     <li>
-      <Link to="/">Home Foo</Link>
+      <Link to="/foo">Home Foo</Link>
     </li>
     <li>
-      <Link to="/cores">Cores</Link>
+      <Link to="/foo/cores">Cores</Link>
     </li>
   </ul>
 }
 
 const Rotas = () => {
   return <Switch>
-          <Route exact path="/">
+          <Route exact path="/foo">
             <Home />
           </Route>
-          <Route path="/cores">
+          <Route path="/foo/cores">
             <Topics />
           </Route>
         </Switch>
